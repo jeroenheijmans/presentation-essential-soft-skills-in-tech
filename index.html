@@ -39,6 +39,9 @@
         max-height: 60vh !important;
         max-width: 70vw !important;
       }
+      .smaller-pre {
+        max-width: 50vw;
+      }
     </style>
   </head>
   <body>
@@ -310,13 +313,13 @@
           </section>
           <section data-transition="none">
             <h4>Resources</h4>
-            <div style="position: relative;">
+            <div style="position: relative">
               <img class="fragment r-frame" src="./assets/img/list-making-resources-0.png" alt="" />
             </div>
           </section>
           <section data-transition="none">
             <h4>Resources</h4>
-            <div style="position: relative;">
+            <div style="position: relative">
               <img class="r-frame" src="./assets/img/list-making-resources-1.png" alt="" />
             </div>
           </section>
@@ -338,13 +341,13 @@
           </section>
           <section>
             <h4>Bad news...</h4>
-            <img class="r-frame" src="./assets/img/book-meditations.png" alt="">
+            <img class="r-frame" src="./assets/img/book-meditations.png" alt="" />
           </section>
           <section>
             <h3>Mentorship and Teaching</h3>
           </section>
           <section>
-            <img class="r-frame" src="./assets/img/youtube-learning.png" alt="">
+            <img class="r-frame" src="./assets/img/youtube-learning.png" alt="" />
           </section>
           <section>
             <blockquote>Mentoring and Teaching something are effective ways to <strong>improve</strong> at that thing.</blockquote>
@@ -358,9 +361,9 @@
           </section>
           <section>
             <h4>Resources</h4>
-            <img class="fragment r-frame" src="./assets/img/book-against-empathy.png" alt="">
+            <img class="fragment r-frame" src="./assets/img/book-against-empathy.png" alt="" />
             <aside class="notes">
-              Against "general" empathy.<br>Pro "cognitive" empathy.<br>Regardless it's needed. Inward and outward.
+              Against "general" empathy.<br />Pro "cognitive" empathy.<br />Regardless it's needed. Inward and outward.
             </aside>
           </section>
           <section>
@@ -370,7 +373,7 @@
           <section>
             <h4>2. Inward Empathy</h4>
             <p>Or: empathy towards colleagues and partners.</p>
-            <aside class="notes">All should work on it.<br>If priviliged, then especially!</aside>
+            <aside class="notes">All should work on it.<br />If priviliged, then especially!</aside>
           </section>
           <section>
             <h4>Resources</h4>
@@ -394,11 +397,11 @@
           </section>
           <section>
             <h4>"Ga je nog op vakantie?"</h4>
-            <img class="fitting-img r-frame" src="./assets/img/barber.jpg" alt="">
+            <img class="fitting-img r-frame" src="./assets/img/barber.jpg" alt="" />
             <p>
               <small><em>Disclosure, AI Prompt: shocked hair dresser with an excited client.</em></small>
             </p>
-            <aside class="notes">Barber story.<br>Neighbors are now okay.<br>Gelato.<br>Meetup small talk.</aside>
+            <aside class="notes">Barber story.<br />Neighbors are now okay.<br />Gelato.<br />Meetup small talk.</aside>
           </section>
           <section>
             <blockquote>Small talk creates small gems of inspiration and knowledge!</blockquote>
@@ -422,14 +425,66 @@
 
         <!-- CHAPTER III -->
         <section>
-          <section>
+          <section data-background-image="./assets/img/but-why.png">
             <h2 class="r-fit-text">Chapter III: But... why?!</h2>
           </section>
           <section>
-            <p>TODO</p>
+            <h3>Presentation Abstract</h3>
+            <blockquote>
+              Improving essential non-tech skills is the most <strong>effective</strong> way to improve at your tech job.
+            </blockquote>
           </section>
           <section>
-            <p>TODO</p>
+            <h3>The questions</h3>
+            <ol>
+              <li>Why <em>these</em> skills?</li>
+              <li>Why invest in them <em>over</em> core skills?</li>
+            </ol>
+            <aside class="notes">To answer, let's look at a typical task.</aside>
+          </section>
+          <section>
+            <h3>An example task</h3>
+            <blockquote>Auto-generate API clients for the <code>Fruit</code> API.</blockquote>
+          </section>
+          <section data-transition="none">
+            <img src="./assets/img/diagram-core-task.png" alt="" />
+          </section>
+          <section data-transition="none">
+            <img src="./assets/img/diagram-intermediate-step.png" alt="" />
+          </section>
+          <section data-transition="none">
+            <img src="./assets/img/diagram-full.png" alt="" />
+          </section>
+          <section data-transition="none">
+            <img src="./assets/img/diagram-full.png" alt="" />
+            <pre
+              class="fragment smaller-pre"
+            ><code class="language-javascript">BaseChance = 1.0 // Assumption: base chance of success with core skills</code></pre>
+            <pre
+              class="fragment smaller-pre"
+            ><code class="language-javascript">Evilness = 0.7, Persuasion = 0.9, Empathy = 0.8 // Assumption: lower secondary chances</code></pre>
+            <pre
+              class="fragment smaller-pre"
+            ><code class="language-javascript">ChanceofSuccess = 1.0 x 0.7 x 0.9 x 0.8 // = 0.504 = 50.4% 😭</code></pre>
+            <pre
+              class="fragment smaller-pre"
+            ><code class="language-javascript">VariantCore = 1.02 x 0.7 x 0.9 x 0.8 // = 0.51408 = 51.4% 😢</code></pre>
+            <pre
+              class="fragment smaller-pre"
+            ><code class="language-javascript">VariantBetter = 1.0 x 0.96 x 0.9 x 0.8 // = 0.6912 = 69.1% 😁🎉</code></pre>
+          </section>
+          <section>
+            <h3>Wobbly Statistics, Sound Idea!</h3>
+            <blockquote class="fragment">
+              Improving core skills will face diminishing returns.<br />Secondary skills (often) won't.
+            </blockquote>
+            <div class="fragment">
+              <p>So:</p>
+              <blockquote>Honing secondary skills is the <strong>most effective way</strong> to become better at your job.</blockquote>
+            </div>
+          </section>
+          <section>
+            <h3 class="r-fit-text">Thank for listening &lt;3</h3>
           </section>
         </section>
 

@@ -15,6 +15,22 @@
         --r-heading2-size: 3.11em;
         --r-heading3-size: 2.55em;
         --r-heading4-size: 2em;
+        --r-main-color: #ee7;
+        --r-heading-color: #ee5;
+        --r-heading-text-shadow: 0px 0px 200px rgba(240, 61, 61, 0.6);
+        --r-heading1-text-shadow: 0px 0px 200px rgba(240, 40, 40, 0.6);
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      span,
+      div,
+      blockquote {
+        opacity: 0.95;
       }
       .two-col {
         display: grid;
@@ -51,7 +67,19 @@
       }
       blockquote {
         margin-top: 4vh !important;
-        font-size: 2em;
+      }
+      .reveal {
+        background: url("./assets/img/background.jpg");
+        background-size: cover;
+        background-position: 0 0;
+        transition: background-position 0.3s linear;
+      }
+      .r-fit-text {
+        padding-left: 10%;
+        padding-right: 10%;
+      }
+      .text-xl {
+        font-size: 80px;
       }
     </style>
   </head>
@@ -60,27 +88,21 @@
       <div class="slides">
         <section>
           <h1 class="r-fit-text">The Essential Soft Skills in Tech</h1>
-          <div style="display: flex; gap: 1rem; flex-wrap: wrap; font-size: 0.75em; justify-content: center; padding-top: 20vh">
-            <span style="background: rgba(1, 1, 1, 0.2); padding: 0.5rem 1rem"
-              >Website: <a href="https://www.jeroenheijmans.nl">jeroenheijmans.nl</a></span
+          <div style="display: grid; gap: 1rem; font-size: 0.75em; justify-content: center; padding-top: 20vh">
+            <span style="background: rgba(1, 1, 1, 0.2); padding: 0.5rem 2rem"
+              >Website: <a target="_blank" href="https://www.jeroenheijmans.nl">jeroenheijmans.nl</a></span
             >
-            <span style="background: rgba(1, 1, 1, 0.2); padding: 0.5rem 1rem"
-              >Tierdom: <a href="https://tierdom.jeroenheijmans.nl">tierdom.jeroenheijmans.nl</a></span
+            <span style="background: rgba(1, 1, 1, 0.2); padding: 0.5rem 2rem"
+              >Mastodon: <a target="_blank" href="https://mastodon.social/@jeroenheijmans">@jeroenheijmans@mastodon.social</a></span
             >
-            <span style="background: rgba(1, 1, 1, 0.2); padding: 0.5rem 1rem"
-              >Blog: <a href="https://blog.jeroenheijmans.nl">tierdom.jeroenheijmans.nl</a></span
+            <span style="background: rgba(1, 1, 1, 0.2); padding: 0.5rem 2rem"
+              >Bluesky: <a target="_blank" href="https://bsky.app/profile/jeroenheijmans.nl">@jeroenheijmans.nl</a></span
             >
-            <span style="background: rgba(1, 1, 1, 0.2); padding: 0.5rem 1rem"
-              >Mastodon: <a href="https://mastodon.social/@jeroenheijmans">@jeroenheijmans@mastodon.social</a></span
+            <span style="background: rgba(1, 1, 1, 0.2); padding: 0.5rem 2rem"
+              >LinkedIn: <a target="_blank" href="https://www.linkedin.com/in/jeroenheijmans82">Jeroen Heijmans</a></span
             >
-            <span style="background: rgba(1, 1, 1, 0.2); padding: 0.5rem 1rem"
-              >Bluesky: <a href="https://bsky.app/profile/jeroenheijmans.nl">@jeroenheijmans.nl</a></span
-            >
-            <span style="background: rgba(1, 1, 1, 0.2); padding: 0.5rem 1rem"
-              >LinkedIn: <a href="https://www.linkedin.com/in/jeroenheijmans82">Jeroen Heijmans</a></span
-            >
-            <span style="background: rgba(1, 1, 1, 0.2); padding: 0.5rem 1rem"
-              >GitHub: <a href="https://github.com/jeroenheijmans">@jeroenheijmans</a></span
+            <span style="background: rgba(1, 1, 1, 0.2); padding: 0.5rem 2rem"
+              >GitHub: <a target="_blank" href="https://github.com/jeroenheijmans">@jeroenheijmans</a></span
             >
           </div>
         </section>
@@ -121,25 +143,15 @@
 
           <!-- ## The Presenter -->
           <section>
-            <p>Cook. Gamer. Software Developer.</p>
+            <p class="text-xl">Cook. Gamer. Software Developer.</p>
           </section>
           <section>
             <p>Corona lockdown Work-From-Home be like...</p>
             <img class="r-stretch r-frame" src="./assets/img/work-from-home.jpg" alt="" />
-            <aside class="notes">Bridge: "And I love meetups."<br />Shameless plug...</aside>
+            <aside class="notes">CTO at Infi.</aside>
           </section>
           <section>
-            <h3>Shameless plug!</h3>
-            <p>
-              Advent of Code Meetup<br />
-              December 10, 2024 @ Infi
-            </p>
-            <img src="./assets/img/meetup-preview.png" alt="" />
-            <p><a href="https://www.meetup.com/infi-developers-meetup/events/304793236/">(Meetup link)</a></p>
-            <aside class="notes">Bridge: "Anyways, at Infi I am CTO"</aside>
-          </section>
-          <section>
-            <p>50% CTO + 50% engineer</p>
+            <p class="text-xl">50% CTO + 50% engineer</p>
             <aside class="notes">"Positive feedback does not come from tech skills."<br />Bridge: I reckon that...</aside>
           </section>
           <section>
@@ -163,7 +175,7 @@
               Bridge to structure in chapters.
             </aside>
           </section>
-          <section>
+          <section class="text-xl">
             <h3>Structure</h3>
             <ol>
               <li>Introduction</li>
@@ -220,9 +232,9 @@
           </section>
           <section>
             <h4>Recap</h4>
-            <blockquote>
-              Tech solutions are worthless<br />if evil parties block them.<br /><br />
-              Prepare by thoroughly knowing their ways.
+            <blockquote class="text-xl">
+              Tech solutions are worthless<br />if they get blocked.<br /><br />
+              Be prepared!
             </blockquote>
           </section>
           <section>
@@ -259,7 +271,10 @@
           </section>
           <section>
             <p>Realize:</p>
-            <blockquote>There is never a logical time to go off the beaten path.</blockquote>
+            <blockquote class="text-xl">
+              There is never a logical time<br />
+              to go off the beaten path.
+            </blockquote>
             <aside class="notes">Unless you get persuaded by someone.</aside>
           </section>
           <section>
@@ -268,7 +283,7 @@
           </section>
           <section>
             <div class="two-col">
-              <blockquote>
+              <blockquote class="text-xl">
                 Perfect cuts are worthless<br />
                 if Fruit Ninja gets overwhelmed.
               </blockquote>
@@ -335,7 +350,7 @@
             <div class="three-col">
               <img class="fragment r-frame" src="./assets/img/book-made-to-stick.png" alt="" />
               <img class="fragment r-frame" src="./assets/img/book-influence.png" alt="" />
-              <p class="fragment">Public Speaking course.</p>
+              <p class="fragment"><strong>Public Speaking course.</strong></p>
             </div>
             <aside class="notes">Regardless of how you do it: persuasion is an amplifier.</aside>
           </section>
@@ -399,11 +414,11 @@
             <aside class="notes">Concentrate... keep coding! (Stop sound effects.) Okay, open your eyes now!</aside>
           </section>
           <section>
-            <blockquote>Stress kills productivity.</blockquote>
+            <blockquote class="text-xl">Stress kills productivity.</blockquote>
             <aside class="notes">Crying, but also other stressors.<br />Getting heckled by a crying stakeholder.</aside>
           </section>
           <section>
-            <blockquote>Stress management is a skill.</blockquote>
+            <blockquote class="text-xl">Stress management is a skill.</blockquote>
             <aside class="notes">Includes avoiding stress.<br />More effective than e.g. 2% improvement in coding.</aside>
           </section>
           <section>
@@ -414,10 +429,12 @@
             <h3>🔪 Mentorship and Teaching 🔪</h3>
           </section>
           <section>
-            <img class="r-frame" src="./assets/img/youtube-learning.png" alt="" />
+            <a href="https://youtu.be/rVLchbhV63c" target="_blank"
+              ><img class="r-frame" src="./assets/img/youtube-learning.png" alt=""
+            /></a>
           </section>
           <section>
-            <blockquote>
+            <blockquote class="text-xl">
               Mentoring and Teaching some <strong>thing</strong> are effective ways to improve at that <strong>thing</strong>.
             </blockquote>
           </section>
@@ -477,7 +494,7 @@
             <aside class="notes">Barber story.<br />Neighbors are now okay.<br />Gelato.<br />Meetup small talk.</aside>
           </section>
           <section>
-            <blockquote>Small talk creates small gems of inspiration and knowledge!</blockquote>
+            <blockquote class="text-xl">Small talk creates small gems of inspiration and knowledge!</blockquote>
           </section>
           <section>
             <h3>Essential Soft Skills (recap)</h3>
@@ -504,11 +521,11 @@
           </section>
           <section>
             <h3>Presentation Abstract</h3>
-            <blockquote>
+            <blockquote class="text-xl">
               Improving essential non-tech skills is the most <strong>effective</strong> way to improve at your tech job.
             </blockquote>
           </section>
-          <section>
+          <section class="text-xl">
             <h3>The questions</h3>
             <ol>
               <li>Why <em>these</em> skills?</li>
@@ -518,7 +535,7 @@
           </section>
           <section>
             <h3>An example task</h3>
-            <blockquote>Auto-generate API clients for the <code>Fruit</code> API.</blockquote>
+            <blockquote class="text-xl">Rewrite the Data Transform service using a <em>monadic</em> approach.</blockquote>
           </section>
           <section data-transition="none">
             <img src="./assets/img/diagram-core-task.png" alt="" />
@@ -550,13 +567,15 @@
           </section>
           <section>
             <h3>Wobbly Statistics, Sound Idea!</h3>
-            <blockquote class="fragment" style="font-size: 3.5rem">
-              Improving core skills will face diminishing returns.<br />Secondary skills (often) won't.
-            </blockquote>
+          </section>
+          <section>
+            <h4>Conclusions</h4>
+            <blockquote class="fragment">Core skills face diminishing returns.</blockquote>
             <div class="fragment">
               <p>So:</p>
-              <blockquote style="font-size: 3.5rem">
-                Honing secondary skills is the <strong>most effective way</strong><br />to become better at your job.
+              <blockquote class="text-xl">
+                Honing secondary skills <br />
+                is the <strong>most effective way</strong><br />to become better at your job.
               </blockquote>
             </div>
           </section>
@@ -666,6 +685,16 @@
               <li>spreadsheets</li>
             </ul>
           </section>
+          <section>
+            <h2>Appendix: Sketch Notes</h2>
+            <a href="./assets/img/essential-soft-skills-in-tech-sketch-notes-v1.0.png" target="_blank">
+              <img
+                style="max-width: 60%; max-height: 60%"
+                src="./assets/img/essential-soft-skills-in-tech-sketch-notes-v1.0.png"
+                alt="Sketch notes of 'Soft Skills in Tech' presentation, highlighting terms: Being Evil, Undercover, Inbox Management, Persuasion, 2D List Making, Stress Management, Mentoring, Empathy, and Small Talk. Conclusion in the center: Honing Secondary Skills is Most Effective."
+              />
+            </a>
+          </section>
         </section>
       </div>
     </div>
@@ -680,6 +709,14 @@
         width: 1920,
         height: 1080,
         plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+
+      const divWithBackground = document.querySelector(".reveal");
+
+      Reveal.on("slidechanged", (event) => {
+        const x = -event.indexh * 200;
+        const y = -event.indexv * 100;
+        divWithBackground.style.backgroundPosition = `${x}px ${y}px`;
       });
     </script>
   </body>
